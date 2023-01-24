@@ -1,0 +1,1 @@
+{"name":"Local: ReverseSinglyLinkedList","url":"d:\\DSA JAVA\\ReverseSinglyLinkedList.java","tests":[{"id":1659899281865,"input":"","output":"10 --> 5 --> 121 --> 6 --> null\n6 --> 121 --> 5 --> 10 --> null"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA JAVA\\ReverseSinglyLinkedList.java","group":"local","local":true}
