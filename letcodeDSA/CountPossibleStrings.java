@@ -34,12 +34,14 @@ import java.util.*;
 public class CountPossibleStrings{
     static int countSubstrings(int n, String s) {
         // Write your code here.
-    }
+    } 
     public static void main(String[] args){
         
     }
     https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/
     https://leetcode.com/problems/product-of-array-except-self/ 
     https://leetcode.com/problems/scramble-string/   
+    https://practice.geeksforgeeks.org/problems/flip-bits0240/1 
+    https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1
     
 }
