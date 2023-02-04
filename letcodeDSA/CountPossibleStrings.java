@@ -42,6 +42,8 @@ public class CountPossibleStrings{
     https://leetcode.com/problems/product-of-array-except-self/ 
     https://leetcode.com/problems/scramble-string/   
     https://practice.geeksforgeeks.org/problems/flip-bits0240/1 
-    https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1 
+    https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1  
+
+    https://practice.geeksforgeeks.org/problems/array-pair-sum-divisibility-problem3257/1 
     
 }
