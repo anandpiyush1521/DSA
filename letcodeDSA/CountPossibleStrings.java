@@ -45,5 +45,6 @@ public class CountPossibleStrings{
     https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1  
 
     https://practice.geeksforgeeks.org/problems/array-pair-sum-divisibility-problem3257/1 
+    https://practice.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1?page=1&company[]=Amazon&curated[]=8&sortBy=submissions
     
 }
