@@ -6,13 +6,11 @@ public class PermutingTwoArray{
 
         int n = A.size();
         Collections.sort(A);
-        Collections.sort(B);
-        for(int i = 0; i < n; i++){
-            if((A.get(i) + B.get(n-i-1)) >= k){
-                return a;
-            }
+        Collections.sort(B, Collections.reverseOrder());
+        for(int i=0; i<n; i++){
+            if((A.get(i) + B.get(i)) < k) return b;
         }
-        return b;
+        return a;
     }
     public static void main(String[] args){
         List<Integer> A = new ArrayList<Integer>();
