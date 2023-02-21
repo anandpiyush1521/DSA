@@ -26,8 +26,8 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
 
 import java.util.*;
 public class ProductOfLastKNumbers{
-    ArrayList<Integer> lists;
-    public ProductOfNumbers(){
+    public static ArrayList<Integer> lists;
+    public ProductOfLastKNumbers(){
         lists = new ArrayList<Integer>();
     }
     public static void add(int num){
@@ -41,11 +41,14 @@ public class ProductOfLastKNumbers{
         return product;
     }
     public static void main(String[] args){
-        ProductOfNumbers pr = new ProductOfNumbers();
+        ProductOfLastKNumbers pr = new ProductOfLastKNumbers();
         pr.add(3);
         pr.add(0);
         pr.add(2);
         pr.add(5);
         pr.add(4);
+
+        System.out.println(pr.getproduct(2));
+        System.out.println(pr.getproduct(3));
     }
 }
