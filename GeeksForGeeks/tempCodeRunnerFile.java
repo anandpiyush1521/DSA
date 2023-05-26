@@ -1,1 +1,1 @@
-List<Long> res = new ArrayList<>()
+return list2.size();

@@ -1,27 +1,35 @@
 import java.util.*;
-public class IntersectionOfTwoArraysII{
-    public static void intersect(int[] nums1, int[] nums2){
-        Set<Integer> set1 = new HashSet<>();
-        for(int num: nums1){
-            set1.add(num);
+
+public class IntersectionOfTwoArraysII {
+    public static void intersect(int[] nums1, int[] nums2) {
+        List<Integer> list = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        
+        for (int num : nums1) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
-        Set<Integer> set2 = new HashSet<>();
-        for(int num: nums2){
-            if(set1.contains(num)) {
-                set2.add(num);
-                set1.remove(num);
+        
+        for (int num : nums2) {
+            if (map.containsKey(num) && map.get(num) > 0) {
+                list.add(num);
+                map.put(num, map.get(num) - 1);
             }
         }
-        int[] res = new int[set2.size()];
-        int index=0;
-        for(Integer num: set2){
+        
+        int[] res = new int[list.size()];
+        int index = 0;
+        for (int num : list) {
             res[index++] = num;
         }
-        return res;
+        
+        for (int i = 0; i < res.length; i++) {
+            System.out.print(res[i] + " ");
+        }
     }
-    public static void main(String[] args){
-        int[] nums1 = {4,9,5};
-        int[] nums2 = {9,4,9,8,4};
+    
+    public static void main(String[] args) {
+        int[] nums1 = {1,2,2,1};
+        int[] nums2 = {2,2};
         intersect(nums1, nums2);
     }
 }

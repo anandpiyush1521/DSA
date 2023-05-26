@@ -25,7 +25,15 @@ public class SmallestPositiveMissingNumber{
 
         // int resSize = size - negCount;
         // int[] posArr = new int[resSize];
-        
+        Set<Integer> set = new HashSet<Integer>();
+        for(int num: arr){
+            if(num > 0) set.add(num);
+        }
+
+        for(int i=1; i<=size; i++){
+            if(!set.contains(i)) return i;
+        }
+        return size+1;
     }
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5};

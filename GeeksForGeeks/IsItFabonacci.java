@@ -24,17 +24,20 @@ Explanation: Terms are 0, 1, 2, 3, 6. So the 5th term is 6            */
 import java.util.*;
 public class IsItFabonacci{
     public static long solve(int N, int K, ArrayList<Long> GeekNum){
-        long[] res = new long[N];
-        for(int i = 0; i < GeekNum.size(); i++){
-            res[i] = GeekNum.get(i);
+        long sum = 0;
+        int i =0;
+        int j = K;
+        for(i =0;i<K;i++){
+            sum += GeekNum.get(i);
         }
-        for(int i=K; i<N; i++){
-            res[i] = res[i-1];
-            for(int j=i-K; j<i; j++){
-                res[i] += res[j];
-            }
+        
+        while(j<N){
+            GeekNum.add(sum);
+            sum -= GeekNum.get(j-K);
+            sum += GeekNum.get(j);
+            j++;
         }
-        return res[N - 1];
+        return GeekNum.get(N-1);
     }
     public static void main(String[] args){
         
