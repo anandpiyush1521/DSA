@@ -1,0 +1,1 @@
+board[row][col] = ch;

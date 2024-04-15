@@ -54,7 +54,7 @@ public class DeleteLastNodeOfSinglyLinkedList{
     public static void main(String[] args){
         DeleteLastNodeOfSinglyLinkedList sll = new DeleteLastNodeOfSinglyLinkedList();
         sll.insertAnyPosition(1, 8);
-        sll.insertAnyPosition(2, 9);
+        sll.insertAnyPosition(0, 9);
         sll.insertAnyPosition(1, 16);
         sll.insertAnyPosition(3, 87);
 
